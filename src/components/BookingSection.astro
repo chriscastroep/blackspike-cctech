@@ -6,55 +6,26 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<section class="booking-section">
-  <div class="container">
-    <h2>{title}</h2>
-    <p>Ready to discuss your project? Schedule a consultation to explore how we can help transform your business.</p>
-    <div class="booking-iframe-container">
-      <iframe 
-        src="https://outlook.office.com/book/TechnicalSupportandConsultation@chriscastrotech.com/?ismsaljsauthenabled"
-        width="100%"
-        height="700"
-        frameborder="0"
-        style="border:0"
-        allowfullscreen>
-      </iframe>
-    </div>
+<section class="bs-container bs-mt-lg" id="booking">
+  
+  <!-- Title -->
+  { title && <h2 class="bs-h2 text-center">{ title }</h2>}
+  
+  <!-- Description -->
+  <p class="text-xl text-center mt-8 max-w-2xl mx-auto">
+    Ready to discuss your project? Schedule a consultation to explore how we can help transform your business.
+  </p>
+  
+  <!-- Booking iframe -->
+  <div class="mt-8 rounded-xl overflow-hidden bg-bs-surface-0/90 p-2">
+    <iframe 
+      src="https://outlook.office.com/book/TechnicalSupportandConsultation@chriscastrotech.com/?ismsaljsauthenabled"
+      width="100%"
+      height="700"
+      frameborder="0"
+      style="border:0; border-radius: 0.5rem;"
+      allowfullscreen>
+    </iframe>
   </div>
+  
 </section>
-
-<style>
-  .booking-section {
-    padding: 4rem 0;
-    background: var(--color-bg-secondary, #f8f9fa);
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  .booking-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    color: var(--color-text-primary, #333);
-  }
-  
-  .booking-section p {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-    color: var(--color-text-secondary, #666);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .booking-iframe-container {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-</style>
