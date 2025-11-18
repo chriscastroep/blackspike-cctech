@@ -1,0 +1,60 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<section class="booking-section">
+  <div class="container">
+    <h2>{title}</h2>
+    <p>Ready to discuss your project? Schedule a consultation to explore how we can help transform your business.</p>
+    <div class="booking-iframe-container">
+      <iframe 
+        src="https://outlook.office.com/bookwithme/user/b0dea71d27aa460fb174a0f711f1530a%40chriscastrotech.com/meetingtype/SVRwCe7HMUGxuT6WGxi68g2?anonymous&ismsaljsauthenabled"
+        width="100%"
+        height="700"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+  .booking-section {
+    padding: 4rem 0;
+    background: var(--color-bg-secondary, #f8f9fa);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .booking-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--color-text-primary, #333);
+  }
+  
+  .booking-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--color-text-secondary, #666);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .booking-iframe-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>

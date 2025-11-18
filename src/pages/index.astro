@@ -2,6 +2,7 @@
 
 import Layout from "../layouts/Layout.astro"
 
+import BookingSection from "../components/BookingSection.astro"
 import CaseStudiesSection from "../components/CaseStudiesSection.astro"
 import ClientsSection from "../components/ClientsSection.astro"
 import FaqSection from "../components/FaqSection.astro"
@@ -62,6 +63,10 @@ import testimonials from "../data/testimonials.json"
   <PricingSection
     pricing={ pricing }
     title={ home.pricing_title }
+  />
+
+  <BookingSection
+    title={ home.booking_title }
   />
 
   <FaqSection
