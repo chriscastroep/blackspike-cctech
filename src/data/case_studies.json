@@ -1,8 +1,8 @@
 [
   {
     "title": "Powering Growth.<br>Simplifying Success.",
-    "sector": "Web design",
-    "content": "<strong>Our custom web design solution helped Biotechlet Ltd elevate its digital presence with a clean, modern interface and intuitive user experience. </strong> <br><br>The redesigned site streamlined user journeys, improved accessibility, and strengthened brand credibility.",
+    "sector": "Automation Services",
+    "content": "<strong>Our custom automation solutions helped Fisker Group Inc elevate its employee and customer experience. </strong> <br><br>Eliminating manual onboarding reduced errors and improved turn-around time.",
     "case_study_link": "https://www.spike.news",
     "cta": "Visit spike.news",
     "image": "/content-images/spike.news.avif",
@@ -12,7 +12,7 @@
   {
     "title": "Accelerating Innovation.<br>Empowering Results.",
     "sector": "Development",
-    "content": "Our dynamic design and build simplified productivity, delivering automated solutions, seamless collaboration, and data-driven insights",
+    "content": "Our cloud and hybrid datacenter solutions simplified infrastructure, delivering automated solutions, seamless collaboration, and data-driven insights",
     "case_study_link": "https://pixelate.pictures",
     "cta": "Visit pixelate.pictures",
     "image": "/content-images/pixelate.pictures.avif",
@@ -21,8 +21,8 @@
   },
   {
     "title": "Enhance productivity,<br>boost efficiency.",
-    "sector": "3D Design",
-    "content": "Create, collaborate, and render — all in one streamlined workflow. Teams are connected and producing stunning visuals in minutes.",
+    "sector": "Business Process Solutions",
+    "content": "Create, collaborate, and analyze — all in one streamlined workflow. Teams are connected and producing stunning visuals in minutes.",
     "case_study_link": "https://www.brighton.dog",
     "cta": "Visit brighton.dog",
     "image": "/content-images/brighton.dog.avif",
