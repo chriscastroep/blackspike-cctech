@@ -1,8 +1,8 @@
 [
   {
-    "title": "We create timeless visual identities for modern brands.",
-    "content": "<strong>Great companies are built on their ability to adapt and grow.</strong> We create brands that will adapt and flourish no matter where the market takes you.",
-    "cta": "Call us about branding",
+    "title": "We design and build resilient, scalable and cost effective solutions.",
+    "content": "<strong>Great companies are built on their ability to adapt and grow.</strong> We create infrastructure that will adapt and flourish no matter where the market takes you.",
+    "cta": "Call us about design and implementation",
     "image": "/content-images/blackspike-wallpaper-01.avif",
     "image_alt": ""
   },
@@ -14,16 +14,16 @@
     "image_alt": ""
   },
   {
-    "title": "Design across all dimensions",
-    "content": "<strong>Outstanding 3D design and concepts.</strong> We provide top-of-the-line 3D modelling services delivered by our skilled team of 3D artists.",
-    "cta": "Our 3D Services",
+    "title": "Security across all dimensions",
+    "content": "<strong>Outstanding security design and operations.</strong> We provide top-of-the-line security services delivered by our skilled team of security experts.",
+    "cta": "Our Security Services",
     "image": "/content-images/blackspike-wallpaper-03.avif",
     "image_alt": ""
   },
   {
-    "title": "Apps for all devices and seasons",
-    "content": "<strong>We help companies supercharge their apps by providing world-class, effective design.</strong> Best practice design processes for your products",
-    "cta": "Arrange an app demo",
+    "title": "Endpoint Management",
+    "content": "<strong>We help companies supercharge their staff by providing world-class, effective device management.</strong> Best practice endpoint management for your organization",
+    "cta": "Arrange a demo",
     "image": "/content-images/blackspike-wallpaper-04.avif",
     "image_alt": ""
   }
