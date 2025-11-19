@@ -32,12 +32,18 @@ const { settings } = Astro.props
 
     </nav>
 
-    <!-- CTA -->
-    <button type="button" class="min-w-32 bs-btn" onclick="demo.showModal()">
+    <!-- CTAs -->
+    <div class="flex gap-2">
+      
+      <a href="https://ccastro42.cloudflareaccess.com/cdn-cgi/access/login/ccastro42.cloudflareaccess.com?redirect_url=%2F&amp;kid=eecd37f2b176f3706654b5eeb884b1953efc97b649175b5820e3dd5a48e624f7" class="bs-btn !bg-transparent border border-bs-foreground-dark/30">
+        Login
+      </a>
 
-      { settings.demo.title }
-
-    </button>
+      <button type="button" class="min-w-32 bs-btn" onclick="demo.showModal()">
+        { settings.demo.title }
+      </button>
+      
+    </div>
 
   </div>
 
