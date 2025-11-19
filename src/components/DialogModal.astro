@@ -32,40 +32,20 @@ const { content } = Astro.props
       <!-- Intro -->
       <div class="bs-body-text mb-3" set:html={ content.content } />
 
-        <!-- Form inputs -->
-
-        <!-- Name -->
-        <label class="sr-only" for="name">Name</label>
-
-        <input
-          id="name"
-          type="text"
-          class="border-2 rounded-lg bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
-          placeholder="Your name"
-        >
-
-        <!-- Company -->
-        <label class="sr-only" for="company">Company</label>
-
-        <input
-          id="company"
-          type="text"
-          class="border-2 rounded-lg bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
-          placeholder="Your company"
-        >
-
-        <!-- Email -->
-        <label class="sr-only" for="email">Email</label>
-
-        <input
-          id="email"
-          type="email"
-          class="border-2 rounded-lg bg-bs-surface-0 border-bs-surface-3 form-input px-4 py-3"
-          placeholder="Your email"
-        >
-
-        <!-- Submit -->
-        <button class="bs-btn form-input px-4 py-3">{ content.cta }</button>
+        <!-- Microsoft Forms iframe -->
+        <iframe 
+          width="100%" 
+          height="400px" 
+          src="https://forms.office.com/Pages/ResponsePage.aspx?id=JUhiw9hrFkm0vbZbw6OWwdNkhye-zTdKiWt8AUubNclUMTIyUlYxQjZMSDNFM1pMNjFDQ0dVRjhTRi4u&embed=true" 
+          frameborder="0" 
+          marginwidth="0" 
+          marginheight="0" 
+          style="border: none; max-width:100%; max-height:100vh" 
+          allowfullscreen 
+          webkitallowfullscreen 
+          mozallowfullscreen 
+          msallowfullscreen>
+        </iframe>
 
     </div>
 
