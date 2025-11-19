@@ -5,48 +5,48 @@
     "link": "https://www.blackspike.com/"
   },
   {
-    "title": "Komplex",
-    "image": "/content-images/logo-02.svg",
+    "title": "Amazon Web Services",
+    "image": "/content-images/aws.svg",
     "link": "https://www.blackspike.com/"
   },
   {
-    "title": "Splashed",
-    "image": "/content-images/logo-03.svg",
+    "title": "Cloudflare",
+    "image": "/content-images/cloudflare.svg",
     "link": "https://www.blackspike.com/"
   },
   {
-    "title": "HydroLab",
-    "image": "/content-images/logo-04.svg",
+    "title": "Docker",
+    "image": "/content-images/docker.svg",
     "link": "https://www.blackspike.com/"
   },
   {
-    "title": "Aromaf",
-    "image": "/content-images/logo-05.svg",
+    "title": "Microsoft 365",
+    "image": "/content-images/microsoft_365.svg",
     "link": "https://www.blackspike.com/"
   },
   {
-    "title": "Mediora",
-    "image": "/content-images/logo-06.svg",
+    "title": "Microsoft Azure",
+    "image": "/content-images/azure.svg",
     "link": "https://www.blackspike.com/"
   },
   {
-    "title": "wellboth",
-    "image": "/content-images/logo-07.svg",
+    "title": "OKTA",
+    "image": "/content-images/okta.svg",
     "link": "https://www.blackspike.com/"
   },
   {
-    "title": "humbbble",
-    "image": "/content-images/logo-08.svg",
+    "title": "NVIDIA",
+    "image": "/content-images/nvidia.svg",
     "link": "https://www.blackspike.com/"
   },
   {
-    "title": "Interia",
-    "image": "/content-images/logo-09.svg",
+    "title": "Oracle",
+    "image": "/content-images/oracle.svg",
     "link": "https://www.blackspike.com/"
   },
   {
-    "title": "Anorch",
-    "image": "/content-images/logo-10.svg",
+    "title": "VMWare",
+    "image": "/content-images/vmware.svg",
     "link": "https://www.blackspike.com/"
   }
 ]
