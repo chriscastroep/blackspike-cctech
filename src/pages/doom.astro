@@ -9,35 +9,26 @@
     <meta name="viewport" content="width=device-width" />
     <title>rip and tear</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="https://br.cdn.dos.zone/js-dos/nightly/js-dos.css" />
+    <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css" />
     <style>
       *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-      html, body {
-        height: 100%;
+      body {
         background: #0a0a0a;
+        min-height: 100svh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-family: monospace;
-        color: #cc0000;
         gap: 0.75rem;
+        font-family: monospace;
       }
 
-      .label {
-        font-size: 0.7rem;
-        letter-spacing: 0.35em;
-        text-transform: uppercase;
-        opacity: 0.4;
-      }
-
-      #dos-wrap {
+      #game-wrap {
         position: relative;
-        width: min(640px, 100vw);
-        aspect-ratio: 4 / 2.5;
-        background: #000;
-        border: 1px solid rgba(204, 0, 0, 0.15);
+        width: 640px;
+        height: 400px;
+        max-width: 100vw;
       }
 
       #dos {
@@ -48,78 +39,80 @@
       #overlay {
         position: absolute;
         inset: 0;
+        z-index: 100;
+        background: #000;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
-        background: rgba(0, 0, 0, 0.82);
+        gap: 1.25rem;
         cursor: pointer;
-        transition: opacity 0.3s;
-        z-index: 10;
+        border: 1px solid rgba(180, 0, 0, 0.2);
       }
 
-      #overlay:hover { background: rgba(0, 0, 0, 0.72); }
-
-      .doom-title {
-        font-size: clamp(2rem, 8vw, 3.5rem);
-        letter-spacing: 0.2em;
+      #overlay-title {
+        font-size: 4rem;
+        font-weight: bold;
+        letter-spacing: 0.15em;
         color: #cc0000;
-        text-shadow: 0 0 30px rgba(204, 0, 0, 0.6);
+        text-shadow: 0 0 40px rgba(204, 0, 0, 0.5);
+        font-family: monospace;
       }
 
-      .click-prompt {
+      #overlay-prompt {
         font-size: 0.7rem;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
         color: rgba(204, 0, 0, 0.55);
         animation: blink 1.2s step-end infinite;
+        font-family: monospace;
       }
 
       @keyframes blink {
         0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
+        50%       { opacity: 0; }
       }
 
-      .exit {
+      #top-label {
+        font-size: 0.65rem;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: rgba(204, 0, 0, 0.3);
+        font-family: monospace;
+      }
+
+      #exit-link {
         font-size: 0.65rem;
         letter-spacing: 0.25em;
-        color: rgba(204, 0, 0, 0.35);
+        color: rgba(204, 0, 0, 0.3);
         text-decoration: none;
+        font-family: monospace;
         transition: color 0.2s;
       }
-      .exit:hover { color: rgba(204, 0, 0, 0.7); }
+
+      #exit-link:hover { color: rgba(204, 0, 0, 0.65); }
     </style>
   </head>
 
   <body>
-    <span class="label">you weren't supposed to find this</span>
+    <span id="top-label">you weren't supposed to find this</span>
 
-    <div id="dos-wrap">
+    <div id="game-wrap">
       <div id="overlay">
-        <div class="doom-title">DOOM</div>
-        <div class="click-prompt">click to play</div>
+        <div id="overlay-title">DOOM</div>
+        <div id="overlay-prompt">click to play</div>
       </div>
       <div id="dos"></div>
     </div>
 
-    <a href="/" class="exit">← escape</a>
+    <a id="exit-link" href="/">← escape</a>
 
-    <script src="https://br.cdn.dos.zone/js-dos/nightly/js-dos.js"></script>
+    <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
     <script>
-      const overlay = document.getElementById('overlay');
-      const dosEl = document.getElementById('dos');
-      let started = false;
-
-      overlay.addEventListener('click', () => {
-        if (started) return;
-        started = true;
-        overlay.style.opacity = '0';
-        overlay.style.pointerEvents = 'none';
-        setTimeout(() => overlay.remove(), 300);
-
-        Dos(dosEl, {
+      document.getElementById('overlay').addEventListener('click', function () {
+        this.style.display = 'none';
+        Dos(document.getElementById('dos'), {
           url: '/doom.jsdos',
-          renderAspect: '4/3',
         });
       });
     </script>
