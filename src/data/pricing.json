@@ -1,30 +1,30 @@
 [
   {
-    "title": "Remote Support Session",
+    "title": "Pay-Per-Session",
     "tag": "Most popular",
-    "content": "Per hour support session",
-    "cta": "Book Appointment",
+    "content": "Billed per hour — no contracts",
+    "cta": "Book a Session",
     "price": 125,
     "services": [
-      { "item": "Break/Fix support" },
-      { "item": "Application Support" },
-      { "item": "Upgrades and maintenance" },
-      { "item": "Teams/slack chat" },
-      { "item": "Security Assessments" }
+      { "item": "Remote or onsite support" },
+      { "item": "Break/fix & troubleshooting" },
+      { "item": "Software & app support" },
+      { "item": "Hardware diagnostics & repair" },
+      { "item": "Security assessments" }
     ]
   },
   {
-    "title": "Retainer plan",
+    "title": "Monthly Retainer",
     "tag": "Best value",
     "content": "Up to 30% savings per month",
-    "cta": "Enquire now",
+    "cta": "Enquire Now",
     "price": 125,
     "services": [
-      { "item": "All remote services" },
-      { "item": "Fixed number of hours per month" },
-      { "item": "Advanced reporting and analytics" },
-      { "item": "Onsite support available" },
-      { "item": "Scheduled maintenance and security assessments" }
+      { "item": "All pay-per-session services" },
+      { "item": "Fixed monthly hour block" },
+      { "item": "Priority scheduling" },
+      { "item": "Proactive maintenance & patching" },
+      { "item": "Monthly security & backup review" }
     ]
   }
 ]

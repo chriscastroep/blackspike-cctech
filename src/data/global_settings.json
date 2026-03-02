@@ -1,22 +1,18 @@
 {
-  "title": "blackspike astro landing page",
-  "description": "A free Astro landing theme made with Tailwind",
+  "title": "Chris Castro Technical Solutions",
+  "description": "Your I.T. Savior — Expert IT support and consulting in Los Angeles, CA. Hard drive recovery, computer repair, network setup, and emergency support.",
   "social_image": "/1200x630.jpg",
-  "base_url": "https://astro-theme.blackspike.com",
+  "base_url": "https://chriscastrotech.com",
   "demo": {
-    "title": "Need design?",
-    "content": "<strong>Get a guided tour through our services</strong>, and find out how you and your team can change the way you work, forever.",
-    "cta": "Book a call"
+    "title": "Need IT help?",
+    "content": "<strong>Schedule a free consultation</strong> to find out how we can solve your technology challenges — fast.",
+    "cta": "Book a Consultation"
   },
   "theme_color": "#18181b",
   "nav": [
     {
       "title": "Services",
       "link": "/#services"
-    },
-    {
-      "title": "Case studies",
-      "link": "/#case-studies"
     },
     {
       "title": "Pricing",
@@ -27,31 +23,27 @@
       "link": "/#faq"
     },
     {
-      "title": "Newsletter",
-      "link": "#newsletter"
+      "title": "Book Now",
+      "link": "/#booking"
     }
   ],
 
   "social_links": [
     {
-      "title": "Twitter / X",
-      "link": "https://x.com/blackspikeltd/"
+      "title": "Call: 213-308-0127",
+      "link": "tel:2133080127"
     },
     {
-      "title": "Mastodon",
-      "link": "https://mastodon.cloud/@blackspike"
+      "title": "Email Us",
+      "link": "mailto:chris@chriscastrotech.com"
     },
     {
-      "title": "GitHub",
-      "link": "https://github.com/blackspike/"
+      "title": "Yelp Reviews",
+      "link": "https://www.yelp.com/biz/mid-city-it-los-angeles"
     },
     {
       "title": "LinkedIn",
-      "link": "https://www.linkedin.com/company/blackspike"
-    },
-    {
-      "title": "Bluesky",
-      "link": "https://bsky.app/profile/blackspike.com/"
+      "link": "https://www.linkedin.com/company/mid-city-it"
     }
   ]
 }

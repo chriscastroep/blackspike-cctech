@@ -1,52 +1,52 @@
 [
   {
-    "title": "Avid",
-    "image": "/content-images/avid.svg",
-    "link": "https://www.blackspike.com/"
-  },
-  {
-    "title": "Amazon Web Services",
-    "image": "/content-images/aws.svg",
-    "link": "https://www.blackspike.com/"
-  },
-  {
-    "title": "Cloudflare",
-    "image": "/content-images/cloudflare.svg",
-    "link": "https://www.blackspike.com/"
-  },
-  {
-    "title": "Docker",
-    "image": "/content-images/docker.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Microsoft Azure",
+    "image": "/content-images/azure.svg",
+    "link": "https://azure.microsoft.com"
   },
   {
     "title": "Microsoft 365",
     "image": "/content-images/microsoft_365.svg",
-    "link": "https://www.blackspike.com/"
+    "link": "https://www.microsoft365.com"
   },
   {
-    "title": "Microsoft Azure",
-    "image": "/content-images/azure.svg",
-    "link": "https://www.blackspike.com/"
+    "title": "Amazon Web Services",
+    "image": "/content-images/aws.svg",
+    "link": "https://aws.amazon.com"
+  },
+  {
+    "title": "Cloudflare",
+    "image": "/content-images/cloudflare.svg",
+    "link": "https://www.cloudflare.com"
+  },
+  {
+    "title": "Docker",
+    "image": "/content-images/docker.svg",
+    "link": "https://www.docker.com"
   },
   {
     "title": "OKTA",
     "image": "/content-images/okta.svg",
-    "link": "https://www.blackspike.com/"
+    "link": "https://www.okta.com"
+  },
+  {
+    "title": "VMware",
+    "image": "/content-images/vmware.svg",
+    "link": "https://www.vmware.com"
+  },
+  {
+    "title": "Active Directory",
+    "image": "/content-images/active_directory.svg",
+    "link": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id"
   },
   {
     "title": "NVIDIA",
     "image": "/content-images/nvidia.svg",
-    "link": "https://www.blackspike.com/"
+    "link": "https://www.nvidia.com"
   },
   {
     "title": "Oracle",
     "image": "/content-images/oracle.svg",
-    "link": "https://www.blackspike.com/"
-  },
-  {
-    "title": "VMWare",
-    "image": "/content-images/vmware.svg",
-    "link": "https://www.blackspike.com/"
+    "link": "https://www.oracle.com"
   }
 ]

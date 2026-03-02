@@ -1,30 +1,30 @@
 [
   {
-    "title": "We design and build resilient, scalable and cost effective solutions.",
-    "content": "<strong>Great companies are built on their ability to adapt and grow.</strong> We create infrastructure that will adapt and flourish no matter where the market takes you.",
-    "cta": "Call us about design and implementation",
+    "title": "Hard Drive Recovery & Data Rescue",
+    "content": "<strong>Don't lose what matters most.</strong> We recover data from crashed, corrupted, or failing drives — including files, photos, business documents, and databases.",
+    "cta": "Get emergency data recovery",
     "image": "/content-images/blackspike-wallpaper-01.avif",
-    "image_alt": ""
+    "image_alt": "Data recovery and hard drive rescue"
   },
   {
-    "title": "We design websites that drive conversions and delight users.",
-    "content": "<strong>Experts in imagining future interfaces and experiences.</strong> From UX to creative to analytics, we are there every step of the way.",
-    "cta": "Book a website review call",
+    "title": "Computer Setup & Hardware Repair",
+    "content": "<strong>New machine or broken one — we handle it.</strong> From setting up a brand-new workstation to diagnosing hardware failures, we get your equipment performing its best.",
+    "cta": "Book a repair appointment",
     "image": "/content-images/blackspike-wallpaper-02.avif",
-    "image_alt": ""
+    "image_alt": "Computer setup and hardware repair"
   },
   {
-    "title": "Security across all dimensions",
-    "content": "<strong>Outstanding security design and operations.</strong> We provide top-of-the-line security services delivered by our skilled team of security experts.",
-    "cta": "Our Security Services",
+    "title": "Network & Cloud Solutions",
+    "content": "<strong>Stay connected and secure.</strong> We design, configure, and troubleshoot home and office networks, Wi-Fi, VPNs, and cloud storage — Microsoft 365, Google Workspace, and more.",
+    "cta": "Upgrade your network",
     "image": "/content-images/blackspike-wallpaper-03.avif",
-    "image_alt": ""
+    "image_alt": "Network setup and cloud solutions"
   },
   {
-    "title": "Endpoint Management",
-    "content": "<strong>We help companies supercharge their staff by providing world-class, effective device management.</strong> Best practice endpoint management for your organization",
-    "cta": "Arrange a demo",
+    "title": "Remote & Emergency Support",
+    "content": "<strong>Help when you need it most.</strong> Available Monday–Friday 8AM–11PM and weekends 11AM–5PM. Remote sessions and onsite visits throughout the Los Angeles area.",
+    "cta": "Get help now",
     "image": "/content-images/blackspike-wallpaper-04.avif",
-    "image_alt": ""
+    "image_alt": "Remote and emergency IT support"
   }
 ]

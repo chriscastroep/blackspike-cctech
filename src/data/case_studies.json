@@ -1,32 +1,32 @@
 [
   {
-    "title": "Powering Growth.<br>Simplifying Success.",
-    "sector": "Automation Services",
-    "content": "<strong>Our custom automation solutions helped Fisker Group Inc elevate its employee and customer experience. </strong> <br><br>Eliminating manual onboarding reduced errors and improved turn-around time.",
-    "case_study_link": "https://www.spike.news",
-    "cta": "Visit spike.news",
-    "image": "/content-images/spike.news.avif",
-    "image_alt": "iPad showing spike.news website",
+    "title": "Data recovered.<br>Business saved.",
+    "sector": "Data Recovery",
+    "content": "<strong>A small business owner's primary drive failed hours before a critical client deadline.</strong> <br><br>We performed emergency data recovery, restored all files, and configured a reliable automated backup solution — preventing any future loss.",
+    "case_study_link": "/#booking",
+    "cta": "Book a consultation",
+    "image": "/content-images/blackspike-wallpaper-01.avif",
+    "image_alt": "Hard drive data recovery",
     "bg": "bg-gradient-to-r from-indigo-500 to-purple-600"
   },
   {
-    "title": "Accelerating Innovation.<br>Empowering Results.",
-    "sector": "Development",
-    "content": "Our cloud and hybrid datacenter solutions simplified infrastructure, delivering automated solutions, seamless collaboration, and data-driven insights",
-    "case_study_link": "https://pixelate.pictures",
-    "cta": "Visit pixelate.pictures",
-    "image": "/content-images/pixelate.pictures.avif",
-    "image_alt": "iPad showing pixelated wave painting",
+    "title": "Office network.<br>Zero downtime migration.",
+    "sector": "Network & Cloud",
+    "content": "A 12-person creative studio needed to move from on-premises file storage to Microsoft 365. We planned and executed a full migration with no interruption to their workflow.",
+    "case_study_link": "/#booking",
+    "cta": "Upgrade your setup",
+    "image": "/content-images/blackspike-wallpaper-02.avif",
+    "image_alt": "Office network and cloud migration",
     "bg": "bg-gradient-to-r from-fuchsia-500 to-cyan-500"
   },
   {
-    "title": "Enhance productivity,<br>boost efficiency.",
-    "sector": "Business Process Solutions",
-    "content": "Create, collaborate, and analyze — all in one streamlined workflow. Teams are connected and producing stunning visuals in minutes.",
-    "case_study_link": "https://www.brighton.dog",
-    "cta": "Visit brighton.dog",
-    "image": "/content-images/brighton.dog.avif",
-    "image_alt": "iPad showing the web page of brighton.dog",
+    "title": "Remote support.<br>Back online in minutes.",
+    "sector": "Emergency Support",
+    "content": "A client's point-of-sale system crashed during business hours. A remote support session had them operational in under 20 minutes — no site visit required, no lost sales.",
+    "case_study_link": "/#booking",
+    "cta": "Get remote support",
+    "image": "/content-images/blackspike-wallpaper-03.avif",
+    "image_alt": "Remote IT support session",
     "bg": "bg-gradient-to-r from-pink-500 to-yellow-500"
   }
 ]
