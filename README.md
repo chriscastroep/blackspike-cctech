@@ -1,83 +1,138 @@
-# blackspike astro landing page
+# chriscastrotech.com
 
-[<img src="public/theme-preview/github-preview.jpg" alt="screens showing theme parts on iPads" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/github-preview.jpg)
+The marketing and portfolio site for **Chris Castro Technical Solutions** — built on [Astro 5](https://astro.build/) + [Tailwind CSS 4](https://tailwindcss.com/) with JSON-driven content.
 
-## A free, modern, [Astro](https://astro.build/) landing page theme made with [Tailwind](https://tailwindcss.com/) to help kick start your next Astro project
+**Live:** <https://chriscastrotech.com>  
+**Deploy platform:** Cloudflare Pages (project: `cctech-spike`)
 
-We built this page as the first version of our own website, [blackspike.com](https://www.blackspike.com), but switched to a different design later.
+---
 
-Rather than let it gather dust, we decided to modernise it, try out some fresh new CSS features and give it back to the Astro community.
+## Stack
 
-You can read more about how we built it and the cool new tech we used [on our blog post](https://www.blackspike.com/blog/blackspike-free-astro-tailwind-theme/).
+| Layer | Technology | Version |
+|-------|-----------|---------|
+| Framework | [Astro](https://astro.build/) | ^5.11.0 |
+| CSS | [Tailwind CSS](https://tailwindcss.com/) | ^4.1.11 |
+| Package manager | [pnpm](https://pnpm.io/) | (see lockfile) |
+| Fonts | Inter / InterDisplay (local) | — |
+| Carousel | [Swiper.js](https://swiperjs.com/) | ^11.2.10 |
+| Deploy | Cloudflare Pages | — |
 
-Now available as an official Astro theme! [Download it from the Astro themes page](https://astro.build/themes/details/blackspike-astro-landing-page/)
+---
 
-## Live demo https://astro-theme.blackspike.com
+## Development
 
-We hope you find it useful!
+```bash
+# Install dependencies (run once, or after package changes)
+pnpm install
 
-## License
+# Start dev server (hot-reload) at http://localhost:4321
+pnpm run dev
 
-Theme and 3D images are licensed under a [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/).
+# Build for production
+pnpm run build   # output → dist/
 
-Created by blackspike [blackspike design](https://www.blackspike.com) – a web design & development team specialising in Astro, Vue, Nuxt & Wordpress websites
+# Preview production build locally
+pnpm run preview
+```
 
-## Astro 5 Features
+> **Note:** The build requires the `sharp` image processing library. If it's missing, add it first:
+> ```bash
+> pnpm add sharp && pnpm install && pnpm run build
+> ```
 
-- [Image component](https://docs.astro.build/en/guides/images/#display-optimized-images-with-the-image--component) for optimised AVIF images
-- All-[JSX](https://docs.astro.build/en/reference/astro-syntax/) native astro components
-- SVGs imported as [SVG components](https://docs.astro.build/en/guides/images/#svg-components)
-- JSON-powered content (easy to edit UI text or hook up a CMS!)
-- Experimental [Fonts API](https://docs.astro.build/en/reference/experimental-flags/fonts/)
+---
 
-## CSS & HTML Features
+## Deployment
 
-- [Tailwind 4](https://tailwindcss.com/blog/tailwindcss-v4)
-- HTML modal dialog
-- JS-free scroll-linked animations
-- JS-free exclusive accordions with details/summary (animated!)
-- Container queries
-- Linear easing for bouncing / springing
-- Text wrap pretty / balance
+Deployments are handled automatically by **Cloudflare Pages**:
 
-## JS Features
+| Branch | Environment | URL |
+|--------|-------------|-----|
+| `main` | Production | <https://chriscastrotech.com> |
 
-- [swiper.js](https://swiperjs.com/) carousel
+### Build Settings (Cloudflare Pages)
+- **Project name:** `cctech-spike`
+- **Build command:** `pnpm run build`
+- **Build output directory:** `dist`
+- **Node.js version:** 22
+- **Compatibility flags:** `nodejs_compat`
 
-## Previews
+Every push to `main` triggers a new production deployment. PRs create preview deployments automatically.
 
-[<img src="public/theme-preview/blackspike-theme-1.jpg" alt="screenshot of dark theme landing page on desktop and on ipad browsers" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-1.jpg)
+---
 
-[<img src="public/theme-preview/blackspike-theme-2.jpg" alt="screenshot of dark theme carousel slides with 3D backgrounds" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-2.jpg)
+## Content Architecture
 
-[<img src="public/theme-preview/blackspike-theme-4.jpg" alt="screens showing theme parts" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-4.jpg)
+All site content lives in `src/data/*.json`. **No code changes required** to update text, links, or site copy — just edit the JSON files.
 
-[<img src="public/theme-preview/blackspike-theme-5.jpg" alt="dark theme pricing section on laptop and iPhone browsers" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-5.jpg)
+| File | Sections it drives |
+|------|--------------------|
+| `global_settings.json` | Site title, description, nav links, social image, base URL, theme colour |
+| `home.json` | Hero section, intro text, CTAs |
+| `services.json` | Services section — names, descriptions, icons |
+| `pricing.json` | Pricing plans — tiers, features, prices |
+| `case_studies.json` | Portfolio / case studies grid |
+| `clients.json` | Client logos / partner section |
+| `testimonials.json` | Customer quotes carousel |
+| `faq.json` | FAQ accordion — questions and answers |
+| `newsletter.json` | Newsletter / CTA section |
+| `credits.json` | Site credits / footer |
 
-[<img src="public/theme-preview/blackspike-theme-full.webp" alt="full page preview" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-full.webp)
+### How to Update Content
 
-## Credits
+1. Edit the relevant JSON file in `src/data/`
+2. The component that renders that section reads the JSON directly — no template changes needed
+3. Commit and push to `main` — Cloudflare Pages deploys within ~1–2 minutes
 
-- Fake logos by [uicontent.co](https://uicontent.co/svg-dummy-logo/)
-- Quote avatar person by [thispersondoesnotexist.com](https://thispersondoesnotexist.com/)
-- Misc icons and logo from [icones.js.org](https://icones.js.org/) by [@antfu](https://github.com/antfu)
-- Carousel powered by [swiperjs.com](https://swiperjs.com/)
-- Inter font by [rsms.me](https://rsms.me/inter/)
+**Example — add a new FAQ:**
+```json
+// src/data/faq.json
+[
+  {
+    "question": "Do you offer remote support?",
+    "answer": "Yes! We provide remote support via secure screen sharing for most software issues."
+  }
+]
+```
 
-## Tags
+### Astro Components
 
-#tailwind #tailwind4 #astro #landingPage #css #html #swiper #dark #theme
+Components live in `src/components/` and are driven by the JSON data. To add a new section:
+1. Create a `.astro` component
+2. Import the relevant JSON (`import data from '../data/my_section.json'`)
+3. Add it to the appropriate page in `src/pages/`
 
-## Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## Project Structure
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```
+src/
+├── assets/         # Fonts (Inter, InterDisplay) and static assets
+├── components/     # Astro components (one per section)
+├── data/           # JSON content files — edit these to update site copy
+├── layouts/        # Page layouts
+└── pages/          # Route pages (index.astro = homepage)
+public/             # Static files served as-is (images, favicons)
+astro.config.mjs    # Astro config (Tailwind vite plugin, font config)
+package.json        # Dependencies and scripts
+```
 
+---
+
+## Notes
+
+- Fonts are **local** (self-hosted) — Inter Regular/SemiBold/Bold and InterDisplay Regular/Medium/SemiBold
+- Tailwind 4 is configured as a Vite plugin (`@tailwindcss/vite`) — no `tailwind.config.js` required
+- SVGs are imported as Astro SVG components (no external sprite sheet needed)
+- The experimental Astro Fonts API (`experimental.fonts`) is used for font optimization
+- `astro dev --host` is set in the dev script to expose the server on the local network
+
+---
+
+## Infrastructure
+
+Managed via Terraform in [midcityit/tf-int](https://github.com/midcityit/tf-int):
+- `cloudflare-pages.tf` — Pages project config, build settings, custom domain binding
+- DNS records pointing `chriscastrotech.com` → Cloudflare Pages are in `cloudflare-dns.tf`
